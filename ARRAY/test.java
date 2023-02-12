@@ -1,40 +1,16 @@
+import java.util.Vector;
+
 public class test {
-
-    // swap 2 phan tu tai vi tri i va j
-    void swap(int[] nums, int i, int j) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
-    }
-
-    //sort mang tang dan 
-    int[] sortASC(int[] nums) {
-        for (int i : nums) {
-            for (int j : nums) {
-                if (nums[i] > nums[j])
-                    swap(nums, i, j);
+    public static void main(String[] args) {
+        Vector<Integer> vec = new Vector<Integer>();
+        int[] nums = {1,2,3,4,5,6,7,8,9,0};
+        for(int i = 0; i< nums.length; i++) {
+            if(nums[i] % 2 == 0) {
+                vec.add(nums[i]);
             }
         }
-        return nums;
-    }
 
+        System.out.println(vec);
 
-    // thuc hien yeu cau de bai
-    int[] sortSquare(int[]  nums) {
-        for (int i : nums) {
-           nums[i] = nums[i] * nums[i]; 
-        }
-        return sortASC(nums);
-    }
-
-    public static void main(String[] args) {
-        int[] nums = { -4,-1,0,3,10};
-        test t = new test();
-        int[] result = t.sortSquare(nums);
-        System.out.println("mang sau khi sap xep tang dan la:");
-        for (int i : result) {
-            System.out.println(i +' ');
-        }
     }
 }
-
