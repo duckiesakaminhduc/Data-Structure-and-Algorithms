@@ -1,4 +1,3 @@
-package ARRAY;
 
 public class MaxconsicutiveOnes {
     /* cach so 1 */

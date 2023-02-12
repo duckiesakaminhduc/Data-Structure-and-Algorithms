@@ -1,4 +1,3 @@
-package ARRAY;
 // int[] nums = { 2, 1, 3, 4, 0 };
 
 public class Squares_of_a_Sorted_Array {
